@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "Donghyun Kim",
-    image: "./캡처.PNG", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "./avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Software Engineer",
     bio: "Interested in Marketing & Development",
     email: "lokim0215@gmail.com",
@@ -22,7 +22,6 @@ const CONFIG = {
     description: "welcome to my blog!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
-
   // CONFIG configration (required)
   link: "https://morethan-log.vercel.app",
   since: 2022, // If leave this empty, current year will be used.
