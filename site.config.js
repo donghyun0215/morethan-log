@@ -3,8 +3,8 @@ const CONFIG = {
   profile: {
     name: "Donghyun Kim",
     image: "./avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "Software Engineer",
-    bio: "Life is Once!",
+    role: "Information Systems Graduate",
+    bio: "Seeking Opportunities",
     email: "lokim0215@gmail.com",
     linkedin: "kimdonghyun0215",
     github: "donghyun0215",
