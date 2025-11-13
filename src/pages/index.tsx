@@ -8,6 +8,7 @@ import { queryKey } from "src/constants/queryKey"
 import { GetStaticProps } from "next"
 import { dehydrate } from "@tanstack/react-query"
 import { filterPosts } from "src/libs/utils/notion"
+import { useEffect } from "react"   // 👈 add this
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = filterPosts(await getPosts())
@@ -28,6 +29,13 @@ const FeedPage: NextPageWithLayout = () => {
     type: "website",
     url: CONFIG.link,
   }
+
+  // 👇 fire alert once when the page is loaded in the browser
+  useEffect(() => {
+    fetch("/api/visit").catch((err) =>
+      console.error("visit tracking failed", err)
+    )
+  }, [])
 
   return (
     <>
